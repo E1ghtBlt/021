@@ -1,0 +1,10 @@
+version: "3"
+services:
+  centos:
+    build:
+      context: ./Centos
+      dockerfile: Dockerfile
+mysql:
+  build:
+    context: ./MySQL
+      dockerfile: Dockerfile
