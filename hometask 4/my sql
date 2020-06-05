@@ -1,9 +1,9 @@
 FROM mysql:5.7
-MAINTAINER hliantseva@gmail.com
+MAINTAINER olegrx144@gmail.com
 
 CMD apt-get update
 
-ENV MYSQL_DATABASE hliantseva
+ENV MYSQL_DATABASE oleg
 ENV MYSQL_USER User
 ENV MYSQL_PASSWORD Password
 
