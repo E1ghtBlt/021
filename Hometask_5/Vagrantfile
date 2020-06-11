@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 	
 	ubuntu.vm.network :forwarded_port , guest: 8080 , host: 8080
 	ubuntu.vm.network :forwarded_port , guest: 3306 , host: 3306
-	config.vm.synced_folder "/home/Стільниця/016-master/Hometask_5"
+	config.vm.synced_folder "/home/Стільниця/021-master/Hometask_5"
 	ubuntu.vm.provision "shell",
 	inline:
 	"apt-get update
