@@ -4,8 +4,8 @@ services:
 		image: mysql:5.7
 		restart: always
 		enviroment:
-			MY_ROOT_PASSWORD: 09122000Vit
-			MYSQL_DATABASE: rudyk
+			MY_ROOT_PASSWORD: oleg
+			MYSQL_DATABASE: tsviki
 	apache:
 		image: bitnami/apache:latest
 		restart: allways
