@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-MAINTAINER <ruddstoner@gmail.com>
+MAINTAINER <olegrx144@gmail.com>
 
 EXPOSE 8081
 
