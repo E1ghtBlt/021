@@ -1,0 +1,24 @@
+
+Vagrant.configure("2") do |config|
+
+	config.vm.define "ubuntu" do |ubuntu|
+
+	ubuntu.vm.box = "ubuntu/bionic64"
+	
+ 	ubuntu.vm.provider "virtualbox" do |vb|
+		vb.memory = "4096"
+		vb.cpus = "2"
+	end
+	
+	ubuntu.vm.network :forwarded_port , guest: 8080 , host: 8080
+	ubuntu.vm.network :forwarded_port , guest: 3306 , host: 3306
+	config.vm.synced_folder "/home/Стільниця/016-master/Hometask_5"
+	ubuntu.vm.provision "shell",
+	inline:
+	"apt-get update
+	apt -y install docker-ce
+	docker run -d
+	pip install docker-compose
+	sudo docker-compose up -d"
+	end
+end

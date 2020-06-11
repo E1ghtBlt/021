@@ -1,0 +1,11 @@
+version: "3"
+services: 
+	db:
+		image: mysql:5.7
+		restart: always
+		enviroment:
+			MY_ROOT_PASSWORD: 09122000Vit
+			MYSQL_DATABASE: rudyk
+	apache:
+		image: bitnami/apache:latest
+		restart: allways
