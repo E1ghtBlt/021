@@ -2,10 +2,10 @@ version: "3"
 services: 
 	 db:
 	   image: mysql:5.7
-	    restart: always
-	     enviroment:
-		MY_ROOT_PASSWORD: oleg
-		MYSQL_DATABASE: tsviki
-apache:
+	     restart: always
+	      enviroment:
+		  	MY_ROOT_PASSWORD: oleg
+		  	MYSQL_DATABASE: tsviki
+apache: 
 	image: bitnami/apache:latest
-	restart: allways
+	 restart: allways
